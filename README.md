@@ -1,5 +1,5 @@
 # library-loader
-An Unoffical Samacsys Library Loader but for Linux written in Go.
+An Unoffical Samacsys Library Loader but for Linux written in Go using Qt.
 
 Due to Samacsys's Library Loader software being available only for Windows, this is just designed as an simple alternative to it.
 
@@ -7,7 +7,7 @@ Due to Samacsys's Library Loader software being available only for Windows, this
 
 ### To be completed tasks
 1. Add feature to unzip archives.
-2. Create a placeholder GUI using Gotk3 with necessary elements.
+2. Create a placeholder GUI using Qt with necessary elements.
 3. Create a temporary button to import library zip files.
 4. Create a module to perform copy/move files and folders task.
 5. To perform necessary actions when a library zip file is selected.
