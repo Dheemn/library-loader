@@ -1,9 +1,9 @@
 # library-loader
-An Unoffical Samacsys Library Loader but for Linux written in Python using Qt.
+An Unoffical Samacsys Library Loader but for Linux written in C++ using Qt.
 
 Due to Samacsys's Library Loader software being available only for Windows, this is just designed as an simple alternative to it.
 
-This python program will be bundled as a single executable which can be downloaded, and executed right away.
+This program will be bundled as a single executable which can be downloaded, and executed right away.
 
 ## ⚠️ Currently this only supports KiCAD
 
