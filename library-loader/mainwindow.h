@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "kicadsettings.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -13,6 +14,7 @@ typedef struct
 {
     QString ecad_software;
     QString watch_path;
+    QString libraryDirectory;
 } AppSettings;
 
 class MainWindow : public QMainWindow
@@ -30,6 +32,8 @@ private slots:
     void on_ecad_choice_box_currentTextChanged(const QString &arg1);
 
     void on_settingsButton_clicked();
+
+    void dataAvailable(const QString s);
 
 private:
     Ui::MainWindow *ui;

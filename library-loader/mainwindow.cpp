@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setting.ecad_software = ui->ecad_choice_box->currentText();
+    setting.watch_path = "/home/dheemanth/Components";
+    setting.libraryDirectory = "";
+    // Settings sV;
+
+    ui->folder_select_path->setText(setting.watch_path);
 }
 
 MainWindow::~MainWindow()
@@ -47,12 +52,26 @@ void MainWindow::on_ecad_choice_box_currentTextChanged(const QString &arg1)
 void MainWindow::on_settingsButton_clicked()
 {
     if (setting.ecad_software == "KiCad") {
-        auto ks = new KicadSettings(this);
-        int msg = ks->exec();
-        qDebug("Message: %d", msg);
-        if ( msg == 1 ) {
-            writeLog("KiCad settings updated");
-        }
+        auto ks = new KicadSettings(this, setting.libraryDirectory);
+        // int msg = ks->exec();
+        ks->show();
+
+        connect(ks, &KicadSettings::dataAvailable, this, &MainWindow::dataAvailable);
+        // qDebug("Message: %d", msg);
+        // if ( msg == 1 ) {
+        //     writeLog("KiCad settings updated");
+        // }
+    }
+}
+
+void MainWindow::dataAvailable(const QString s)
+{
+    qDebug() << "Library directory: " << s;
+    if ( s != setting.libraryDirectory) {
+        setting.libraryDirectory = s;
+        writeLog("Settings updated");
+    } else {
+        writeLog("Nothing to update");
     }
 }
 

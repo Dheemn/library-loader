@@ -25,9 +25,6 @@
   <property name="windowTitle">
    <string>KiCad Settings</string>
   </property>
-  <property name="sizeGripEnabled">
-   <bool>true</bool>
-  </property>
   <widget class="QDialogButtonBox" name="kicad_settings_box">
    <property name="geometry">
     <rect>
@@ -225,6 +222,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="comp_libfile_name">
+       <property name="text">
+        <string>LibLoader_Parts.lib</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -299,6 +299,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="doc_file_name">
+       <property name="text">
+        <string>LibLoader_Parts.dcm</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -373,6 +376,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="fp_libdir_name">
+       <property name="text">
+        <string>LibLoader_Parts.pretty</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -447,6 +453,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="model_dir_name">
+       <property name="text">
+        <string>LibLoader_Parts.3dshapes</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -521,6 +530,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="sym_libfile_name">
+       <property name="text">
+        <string>LibLoader_Parts.kicad_sym</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
