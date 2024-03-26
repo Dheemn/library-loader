@@ -8,8 +8,8 @@ This program will be bundled as a single executable which can be downloaded, and
 ## ⚠️ Currently this only supports KiCAD
 
 ### To be completed tasks
-1. Add feature to unzip archives.
-2. Create a placeholder GUI using Qt with necessary elements.
+1. :check_mark_button: ~~Add feature to unzip archives.~~
+2. :check_mark_button: ~~Create a placeholder GUI using Qt with necessary elements.~~
 3. Create a temporary button to import library zip files.
 4. Create a module to perform copy/move files and folders task.
 5. To perform necessary actions when a library zip file is selected.
